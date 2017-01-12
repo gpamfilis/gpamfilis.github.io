@@ -1,0 +1,42 @@
+STORE API documentation.
+========================
+
+
+.. module:: app.api.manage.views
+
+
+This is the Waiter Editor API.
+------------------------------
+
+
+.. autoclass:: WaiterEditor
+   :members:
+   :member-order:
+
+
+
+This is the MenuItemEditor API.
+-------------------------------
+
+
+.. autoclass:: MenuItemEditor
+   :members:
+   :member-order:
+
+This is the TableEditor API.
+----------------------------
+
+
+.. autoclass:: TableEditor
+   :members:
+   :member-order:
+
+This is the ContentEditor API.
+------------------------------
+
+
+.. autoclass:: ContentEditor
+   :members:
+   :member-order:
+
+

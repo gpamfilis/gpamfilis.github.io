@@ -1,0 +1,54 @@
+ANDROID/IOS API documentation.
+==============================
+
+.. module:: app.api.waiter.views
+
+
+This is the Menu API.
+---------------------
+.. autoclass:: MenuApp
+   :members:
+   :member-order:
+
+
+This is the Table API.
+----------------------
+
+.. autoclass:: TableApp
+   :members:
+   :member-order:
+
+
+This is the Order API.
+----------------------
+
+
+.. autoclass:: OrderApp
+   :members:
+   :member-order:
+
+
+This is the TransferOrder API.
+------------------------------
+
+.. autoclass:: TransferOrderApp
+   :members:
+   :member-order:
+
+
+This is the TransferItemApp API.
+--------------------------------
+
+.. autoclass:: TransferItemApp
+   :members:
+   :member-order:
+
+
+
+This is the CheckoutOrder API.
+------------------------------
+
+.. autoclass:: CheckoutOrder
+   :members:
+   :member-order:
+

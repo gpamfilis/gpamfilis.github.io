@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>STORE API documentation. &mdash; e-orders 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="e-orders 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="POS Printer API documentation." href="printerapi.html"/>
+        <link rel="prev" title="ANDROID/IOS API documentation." href="waiter_api.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> e-orders
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="waiter_api.html">ANDROID/IOS API documentation.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">STORE API documentation.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#this-is-the-waiter-editor-api">This is the Waiter Editor API.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#this-is-the-menuitemeditor-api">This is the MenuItemEditor API.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#this-is-the-tableeditor-api">This is the TableEditor API.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#this-is-the-contenteditor-api">This is the ContentEditor API.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="printerapi.html">POS Printer API documentation.</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">e-orders</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>STORE API documentation.</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/manage_api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-app.api.manage.views">
+<span id="store-api-documentation"></span><h1>STORE API documentation.<a class="headerlink" href="#module-app.api.manage.views" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="this-is-the-waiter-editor-api">
+<h2>This is the Waiter Editor API.<a class="headerlink" href="#this-is-the-waiter-editor-api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="app.api.manage.views.WaiterEditor">
+<em class="property">class </em><code class="descclassname">app.api.manage.views.</code><code class="descname">WaiterEditor</code><a class="headerlink" href="#app.api.manage.views.WaiterEditor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="app.api.manage.views.WaiterEditor.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.WaiterEditor.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>todo: Correct the json, it is missing fields.</p>
+<p>example:
+GET request at the following
+<a class="reference external" href="http://127.0.0.1:5000/api/manage/waiter?store_id=1">http://127.0.0.1:5000/api/manage/waiter?store_id=1</a></p>
+<div class="code json highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;store_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;items&quot;</span><span class="p">:</span>
+        <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;personnel_id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_username&quot;</span><span class="p">:</span> <span class="s2">&quot;jjohn&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_cell_phone&quot;</span><span class="p">:</span> <span class="mi">69456789</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_pin&quot;</span><span class="p">:</span> <span class="mi">1234</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;personnel_id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_username&quot;</span><span class="p">:</span> <span class="s2">&quot;jjohn&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_cell_phone&quot;</span><span class="p">:</span> <span class="mi">69456789</span><span class="p">,</span>
+                <span class="s2">&quot;personnel_pin&quot;</span><span class="p">:</span> <span class="mi">1234</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.WaiterEditor.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.WaiterEditor.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>todo: convert &#8220;items&#8221; to an array of obejects and iterate over them.
+<a class="reference external" href="http://127.0.0.1:5000/api/manage/waiter?store_id=1">http://127.0.0.1:5000/api/manage/waiter?store_id=1</a></p>
+<p>{
+&#8220;items&#8221;:
+{
+&#8220;first_name&#8221;:&#8221;&#8221;,
+&#8220;last_name&#8221;:&#8221;&#8221;,
+&#8220;username&#8221;: &#8220;jjohn&#8221;,
+&#8220;cell_phone&#8221;: 69456789,
+&#8220;pin_number&#8221;: 1234,
+&#8220;email&#8221;:&#8221;&#8221;
+}
+}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.WaiterEditor.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.WaiterEditor.put" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/manage/waiter?waiter_id=1">http://127.0.0.1:5000/api/manage/waiter?waiter_id=1</a></p>
+<blockquote>
+<div>{
+&#8220;items&#8221;:
+{
+&#8220;first_name&#8221;:&#8221;&#8221;,
+&#8220;last_name&#8221;:&#8221;&#8221;,
+&#8220;username&#8221;: &#8220;jjohn&#8221;,
+&#8220;cell_phone&#8221;: 69456789,
+&#8220;pin_number&#8221;: 1234,
+&#8220;email&#8221;:&#8221;&#8221;
+}
+}</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.WaiterEditor.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.WaiterEditor.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/manage/waiter?waiter_id=1">http://127.0.0.1:5000/api/manage/waiter?waiter_id=1</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="this-is-the-menuitemeditor-api">
+<h2>This is the MenuItemEditor API.<a class="headerlink" href="#this-is-the-menuitemeditor-api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="app.api.manage.views.MenuItemEditor">
+<em class="property">class </em><code class="descclassname">app.api.manage.views.</code><code class="descname">MenuItemEditor</code><a class="headerlink" href="#app.api.manage.views.MenuItemEditor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="app.api.manage.views.MenuItemEditor.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.MenuItemEditor.get" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/menu?store_id=1">http://127.0.0.1:5000/api/waiter/menu?store_id=1</a></p>
+<p>{
+&#8220;items&#8221;: [
+{
+&#8220;category_name&#8221;: &#8220;my pennis&#8221;,
+&#8220;contents&#8221;: [],
+&#8220;cost&#8221;: 2.5,
+&#8220;id&#8221;: 151,
+&#8220;product_name&#8221;: &#8220;bar&#8221;,
+&#8220;visibility&#8221;: 1
+}
+]
+}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.MenuItemEditor.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.MenuItemEditor.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>example
+<a class="reference external" href="http://127.0.0.1:5000/api/waiter/menu-item?store_id=1">http://127.0.0.1:5000/api/waiter/menu-item?store_id=1</a></p>
+<p>{&#8220;items&#8221;:{
+&#8220;category_name&#8221;: &#8220;foo&#8221;,
+&#8220;product_name&#8221;: &#8220;bar&#8221;,
+&#8220;cost&#8221;: 2.5
+}}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.MenuItemEditor.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.MenuItemEditor.put" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/menu?menu_id=1">http://127.0.0.1:5000/api/waiter/menu?menu_id=1</a></p>
+<p>{
+&#8220;item&#8221;:{
+&#8220;category_name&#8221;: &#8220;foo&#8221;,
+&#8220;product_name&#8221;: &#8220;bar&#8221;,
+&#8220;cost&#8221;: 10
+}
+}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">status</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.MenuItemEditor.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.MenuItemEditor.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/menu?menu_id=1">http://127.0.0.1:5000/api/waiter/menu?menu_id=1</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="this-is-the-tableeditor-api">
+<h2>This is the TableEditor API.<a class="headerlink" href="#this-is-the-tableeditor-api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="app.api.manage.views.TableEditor">
+<em class="property">class </em><code class="descclassname">app.api.manage.views.</code><code class="descname">TableEditor</code><a class="headerlink" href="#app.api.manage.views.TableEditor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="app.api.manage.views.TableEditor.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.TableEditor.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example.</p>
+<p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/table?store_id=1">http://127.0.0.1:5000/api/waiter/table?store_id=1</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">status</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.TableEditor.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.TableEditor.post" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/table?store_id=1">http://127.0.0.1:5000/api/waiter/table?store_id=1</a></p>
+<p>{&#8220;items&#8221;:{
+&#8220;name&#8221;: &#8220;TEST&#8221;,
+&#8220;visibility&#8221;: 1
+}}
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.TableEditor.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.TableEditor.put" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/waiter/table?table_id=1">http://127.0.0.1:5000/api/waiter/table?table_id=1</a></p>
+<p>{&#8220;items&#8221;:{
+&#8220;name&#8221;: &#8220;TEST&#8221;,
+&#8220;visibility&#8221;: 1
+}}
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.TableEditor.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.TableEditor.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://www.e-orders.org/api_pos/table-manager?table_id=1">http://www.e-orders.org/api_pos/table-manager?table_id=1</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="this-is-the-contenteditor-api">
+<h2>This is the ContentEditor API.<a class="headerlink" href="#this-is-the-contenteditor-api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="app.api.manage.views.ContentEditor">
+<em class="property">class </em><code class="descclassname">app.api.manage.views.</code><code class="descname">ContentEditor</code><a class="headerlink" href="#app.api.manage.views.ContentEditor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="app.api.manage.views.ContentEditor.get">
+<code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.ContentEditor.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example.</p>
+<p><a class="reference external" href="http://127.0.0.1:5000/api/manage/content?store_id=1">http://127.0.0.1:5000/api/manage/content?store_id=1</a>
+{
+&#8220;items&#8221;: [
+{
+&#8220;name&#8221;: &#8220;tzatziki&#8221;,
+&#8220;id&#8221;: 1,
+&#8220;visibility&#8221;: 1
+}
+]
+}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.ContentEditor.post">
+<code class="descname">post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.ContentEditor.post" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/manage/content?store_id=1">http://127.0.0.1:5000/api/manage/content?store_id=1</a></p>
+<p>{
+&#8220;items&#8221;:
+{
+&#8220;name&#8221;: &#8220;tzatziki&#8221;,
+&#8220;id&#8221;: 1,
+&#8220;visibility&#8221;: 1
+}
+}
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.ContentEditor.put">
+<code class="descname">put</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.ContentEditor.put" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/manage/content?content_id=1">http://127.0.0.1:5000/api/manage/content?content_id=1</a></p>
+<p>{
+&#8220;items&#8221;:
+{
+&#8220;name&#8221;: &#8220;tzatziki&#8221;,
+&#8220;id&#8221;: 1,
+&#8220;visibility&#8221;: 1
+}
+}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="app.api.manage.views.ContentEditor.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.api.manage.views.ContentEditor.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://127.0.0.1:5000/api/manage/content?content_id=1">http://127.0.0.1:5000/api/manage/content?content_id=1</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="printerapi.html" class="btn btn-neutral float-right" title="POS Printer API documentation." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="waiter_api.html" class="btn btn-neutral" title="ANDROID/IOS API documentation." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, George Pamfilis.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

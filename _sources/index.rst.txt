@@ -10,8 +10,9 @@ Welcome to e-orders's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   api.rst
-
+   waiter_api.rst
+   manage_api.rst
+   printerapi.rst
 
 
 Indices and tables

@@ -3,6 +3,6 @@
 # sudo cp -avr ./e_orders/doc/ ./gpamfilis.github.io/
 mv ./_static/ ./static/
 
-#git add *
+git add *
 #git commit -m "new"
 #git push origin master

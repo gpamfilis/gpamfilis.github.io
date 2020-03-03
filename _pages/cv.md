@@ -11,8 +11,7 @@ redirect_from:
 
 Education
 ======
-* Diploma in Environmental Engineering, Technical University of Crete, 2018
-  * Equivalent to a Bachelor of Science + Master of Science
+* Diploma in Environmental Engineering (5 Year Program), Technical University of Crete, 2018
 
 <!-- Work experience
 ======
